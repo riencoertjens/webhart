@@ -6,7 +6,9 @@ class Index extends Component {
     navigateTo(`/home`);
   }
   render() {
-    return <div />;
+    return (
+        <main></main>
+    );
   }
 }
 export default Index;
