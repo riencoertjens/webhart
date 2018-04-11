@@ -9,8 +9,19 @@
                        "love        love        love"
                        "analytics   analytics   analytics"
                        "cta         cta         cta";
-  h1{
-    grid-area:title;
+}
+
+@media screen and (max-width: 700px) {
+  .home main{
+    grid-template-columns: 1fr !important;
+    grid-template-areas: "artisan"
+                         "fast"
+                         "responsive"
+                         "seo"
+                         "love"
+                         "analytics"
+                         "cta";
+
   }
 }
 
