@@ -42,14 +42,14 @@ class HomePage extends React.Component {
           icon={bolt}
           title="fast"
           className="fast"
-          description="Because you have two seconds to convince your visitors!"
+          description="Because you have two seconds to convince half your visitors!"
           tagline="in the blink of an eye"
         />
         <Card
           icon={phone}
           title="Responsive"
           className="responsive"
-          description="Because the other half of your will be mobile users"
+          description="Because the other half will be mobile users"
           tagline="responsive development goes beyond good looks"
         />
         <Card
