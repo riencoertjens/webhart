@@ -2,7 +2,12 @@ import React from 'react';
 
 const ContactPage = props => (
   <main>
-    <form name="contact" netlify-honeypot="bot-field" method="POST" netlify>
+    <form 
+      name="contact" 
+      data-netlify="true"
+      netlify-honeypot="bot-field" 
+      method="POST"
+    >
       <input name="bot-field" className="visually-hidden" />
       <p>
         <label>
@@ -20,7 +25,7 @@ const ContactPage = props => (
         </label>
       </p>
       <p>
-        <button>Send</button>
+        <button type="submit">Send</button>
       </p>
     </form>
   </main>
