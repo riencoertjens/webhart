@@ -1,0 +1,42 @@
+$titlefont: "Anton", "Helvetica", sans-serif;
+$textfont: "Roboto", "Helvetica", sans-serif;
+
+$menufont: "Raleway", "Helvetica", sans-serif;
+$footerlinkfont: "Raleway Dots", "Helvetica", sans-serif;;
+//$textfont: "Open Sans", "Arial", sans-serif;;
+
+
+body {
+    font-family: $textfont;
+    font-size: 16px;
+    font-weight: 100;
+    color: $color_text;
+         ::selection { color: $wbh_orange; background: black;}
+    ::-moz-selection { color: $wbh_orange; background: black;}
+}
+
+*{
+  text-shadow: 0 0 2px #000;
+}
+
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family: $titlefont;
+  font-weight: 100;
+}
+h1{ font-size: 30px; text-transform: uppercase;}
+h3{ font-size: 15px; }
+a{
+  color: $wbh_blue;
+  text-decoration: none!important;
+  &:hover{
+    color: $wbh_orange;
+  }
+}
+nav a, .cta{
+    font-family: $menufont;
+    font-size: 20px;
+    font-weight: 200;
+    color: $color_text;
+}

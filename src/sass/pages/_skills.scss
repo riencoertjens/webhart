@@ -1,0 +1,55 @@
+.skills main{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: "artisan       artisan"
+                       "network       analytics"
+                       "communication communication"
+                       "tools         tools"
+                       "cta           cta";
+  h1{
+    grid-area:title;
+  }
+  .cta_container{
+    margin-top: 20px;
+  }
+}
+
+.artisan{
+  grid-area:artisan;
+}
+.network{
+  grid-area:network;
+}
+.analytics{
+  grid-area:analytics;
+}
+.tools{
+  grid-area:tools;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 25px;
+  grid-row-gap: 25px;
+  h3{
+    grid-column: 1 / 5;
+    justify-self: center;
+    align-self: center;
+  }
+  a{
+    display: inline-block;
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+
+    img{
+      filter: contrast(0.5) blur(1px);
+      &:hover{
+        filter: 
+              drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)) 
+              drop-shadow(0 0 15px rgba(255, 255, 255, 0.25));
+      }
+    }
+  }
+}

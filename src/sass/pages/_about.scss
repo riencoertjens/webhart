@@ -1,0 +1,19 @@
+.about-me{
+  text-align: center;
+}
+.personalSocial{
+  width: 100%;
+  text-align: center;
+  font-size: 40px;
+  a{
+    color: white;
+    margin: 40px;
+    // filter: blur(1px);
+    &:hover{
+      color: $wbh-blue;
+      filter: 
+          drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)) 
+          drop-shadow(0 0 15px rgba(255, 255, 255, 0.75));
+    }
+  }
+}

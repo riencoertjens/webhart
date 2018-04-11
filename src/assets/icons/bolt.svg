@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 15.056 35.659">
+  <defs>
+    <style>
+      .a{
+      fill:none;
+      stroke:#fe8b00;
+      stroke-linecap:round;
+      stroke-linejoin:round;
+      stroke-miterlimit:10;
+      stroke-width:2px;
+      }</style>
+  </defs>
+  <g transform="translate(-152 -521.5)">
+    <path class="a" d="M9.639.5.5,20.988H7.028V34.159L13.556,16.6H7.028Z" transform="translate(152.5 522)"/>
+  </g>
+</svg>

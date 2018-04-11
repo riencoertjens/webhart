@@ -1,0 +1,39 @@
+.home main{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, auto);
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-areas: "artisan     artisan     artisan"
+                       "fast        responsive  seo"
+                       "love        love        love"
+                       "analytics   analytics   analytics"
+                       "cta         cta         cta";
+  h1{
+    grid-area:title;
+  }
+}
+
+
+.artisan{
+  grid-area:artisan;
+}
+.fast{
+  grid-area:fast;
+}
+.responsive{
+  grid-area:responsive;
+}
+.seo{
+  grid-area:seo;
+}
+.love{
+  grid-area:love;
+}
+.analytics{
+  grid-area:analytics;
+}
+
+.cta_container{
+  grid-area:cta;
+}

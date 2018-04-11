@@ -1,0 +1,21 @@
+@import 'settings';
+@import 'mixins/mixins';
+@import 'bootstrap';
+@import 'global';
+@import 'typography';
+
+
+@import 'components/header';
+@import 'components/logo';
+@import 'components/menu';
+@import 'components/main';
+@import 'components/footer';
+@import 'components/copyright';
+@import 'components/card';
+@import 'components/CTA';
+
+@import 'pages/index';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/skills';
+@import 'pages/contact';
