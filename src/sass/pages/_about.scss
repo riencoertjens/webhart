@@ -1,5 +1,12 @@
-.about-me{
+.about-me,.about-totem{
   text-align: center;
+}
+.about-totem{
+  span{
+    display: inline-block;
+    text-align: right;
+    font-style: italic;
+  }
 }
 .personalSocial{
   width: 100%;
@@ -14,6 +21,21 @@
       filter: 
           drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)) 
           drop-shadow(0 0 15px rgba(255, 255, 255, 0.75));
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .personalSocial{
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    a{
+      width: 33%;
+      color: white;
+      display: inline-block;
+      margin: 0 auto;
+      // filter: blur(1px)
     }
   }
 }
