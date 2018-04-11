@@ -3,7 +3,7 @@ import React from 'react';
 const ContactPage = props => (
   <main>
     <form 
-      name="contact" 
+      name="contact-form" 
       data-netlify="true"
       netlify-honeypot="bot-field" 
       method="POST"
