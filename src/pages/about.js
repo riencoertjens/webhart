@@ -22,7 +22,7 @@ const AboutPage = props => (
     </p>
     <hr/>
     <p className="about-totem">When I went to the scouts, everyone was given a totem - an animal based on their personality. Mine is “Trustworthy Hart” which as you can guess I’m quite proud of. The description goes as follows:<br />
-    <span>“All the movements of the Hart are graceful, proud and dignified. The Hart is careful but when it feels safe, it gives it its confidence. It has excellent developed senses. In the mating season, the Hart often becomes irritated and angry for the slightest trifle. The Hart is sensitive and social, but mutually combative. The Hart is quick, vigilant and inseparable from their fawns.”</span>
+    <span>“All the movements of the Hart are graceful, proud and dignified. The Hart is careful but when it feels safe, it gives its confidence. It has excellent developed senses. In the mating season, the Hart often becomes irritated and angry for the slightest trifle. The Hart is sensitive and social, but mutually combative. The Hart is quick, vigilant and inseparable from their fawns.”</span>
     </p>
     <div className="personalSocial">
       <a target="_blank" href="https://www.facebook.com/rien.coertjens">
