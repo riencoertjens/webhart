@@ -2,7 +2,7 @@ import React from 'react';
 
 const ContactPage = props => (
   <main>
-    <p>this page is under construction</p>
+    <p>this page is under construction (but the form works!)</p>
     <form 
       name="contact-form" 
       data-netlify="true"
