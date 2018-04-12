@@ -22,6 +22,7 @@
     "express": "^4.16.2",
     "gatsby-plugin-google-fonts": "0.0.4",
     "helmet": "^3.10.0",
+    "react-helmet": "^5.2.0",
     "react-icons": "^2.2.7",
     "serve-static": "^1.13.1"
   },
@@ -36,7 +37,7 @@
     "eslint-plugin-react": "^7.6.1",
     "gatsby": "^1.9.178",
     "gatsby-link": "^1.6.36",
-    "gatsby-plugin-google-analytics": "^1.0.17",
+    "gatsby-plugin-google-analytics": "^1.0.28",
     "gatsby-plugin-postcss-sass": "^1.0.16",
     "gatsby-plugin-react-helmet": "^1.0.8",
     "gatsby-plugin-react-next": "^1.0.8",

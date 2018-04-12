@@ -4,11 +4,24 @@ const autoprefixer = require('autoprefixer');
 module.exports = {
   siteMetadata: {
     title: `webhart`,
+    description: `tailor made websites`,
   },
   plugins: [
     `gatsby-plugin-react-next`,
     `gatsby-plugin-react-helmet`,
     `svgo`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-19600184-6",
+        // Puts tracking script in the head instead of the body
+        head: false,
+        // Setting this parameter is optional
+        anonymize: true,
+        // Setting this parameter is also optional
+        respectDNT: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-postcss-sass`,
       options: {
