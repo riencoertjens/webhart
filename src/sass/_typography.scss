@@ -2,14 +2,12 @@ $titlefont: "Anton", "Helvetica", sans-serif;
 $textfont: "Roboto", "Helvetica", sans-serif;
 
 $menufont: "Raleway", "Helvetica", sans-serif;
-$footerlinkfont: "Raleway Dots", "Helvetica", sans-serif;;
-//$textfont: "Open Sans", "Arial", sans-serif;;
 
 
 body {
     font-family: $textfont;
-    font-size: 16px;
-    font-weight: 100;
+    font-size: 15px;
+    font-weight: 300;
     color: $color_text;
          ::selection { color: $wbh_orange; background: black;}
     ::-moz-selection { color: $wbh_orange; background: black;}
@@ -23,7 +21,7 @@ body {
 
 h1, h2, h3, h4, h5, h6{
   font-family: $titlefont;
-  font-weight: 100;
+  letter-spacing: 1.5px;
 }
 h1{ font-size: 30px; text-transform: uppercase;}
 h3{ font-size: 15px; }

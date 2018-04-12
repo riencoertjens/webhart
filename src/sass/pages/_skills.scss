@@ -43,6 +43,7 @@
 .tools{
   grid-area:tools;
   display: grid;
+  margin: 40px 100px 30px;
   grid-template-columns: repeat(4, 1fr);
   grid-column-gap: 25px;
   grid-row-gap: 25px;
@@ -58,7 +59,7 @@
     align-self: center;
 
     img{
-      filter: contrast(0.5) blur(1px);
+      filter: contrast(0.15);
       &:hover{
         filter: 
               drop-shadow(0 0 5px rgba(0, 0, 0, 0.5)) 
@@ -70,6 +71,7 @@
 
 @media screen and (max-width: 700px) {
   .tools{
+    margin: 40px 50px 30px;
     grid-template-columns: repeat(3, 1fr);
     h3{
       grid-column: 1 / 4;

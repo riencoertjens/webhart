@@ -26,12 +26,8 @@ module.exports = {
       options: {
         fonts: [
           `Raleway\:100,200,300,400`,
-          `Raleway Dots`,
-          `Open Sans`,
           `Anton`,
-          `Roboto\:100,200`,
-          `Source Sans Pro\:100,200,300,400`,
-          `Lato`
+          `Roboto\:100,200,300`
         ]
       }
     },
