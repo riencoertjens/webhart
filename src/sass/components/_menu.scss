@@ -71,7 +71,7 @@ nav.main{
 nav.social{
   width: $menu-height*4;
   margin-top: -1px;
-  margin-bottom: $menu-height + $menu-margin;
+  margin-bottom: $menu-height + $menu-margin + 20px;
   a{
     padding: $menu-height*0.20;
     svg{
