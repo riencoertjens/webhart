@@ -56,7 +56,7 @@ class HomePage extends React.Component {
           icon={search}
           title="SEO(ptimized)"
           className="seo"
-          description="Because you need to be seen to make an impression"
+          description="Because you can't make an impression if people can't see you"
           tagline="search engine optimized"
         />
         <Card
@@ -72,7 +72,6 @@ class HomePage extends React.Component {
           descriptionBottom="Online 'the only constant is change'. A website isn't finished after a launch. After letting the world loose on a website, we see how it is used and where it can be improved to create a better experience"
           className="analytics"
         />
-
         <div className="cta_container">
           <CTA to="contact" label="get in touch" className="solid" />
           <CTA to="skills" label="learn more" />

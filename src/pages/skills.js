@@ -58,7 +58,7 @@ const SkillsPage = props => (
       className="communication"
     />
     <div className="tools">
-      <h3>These are some technologies and tools I like and use</h3>
+      <h3>technologies and tools I like and use</h3>
       <a href="https://www.google.com/search?q=html" target="_blank"><img src={html} /></a>
       <a href="https://www.google.com/search?q=css" target="_blank"><img src={css} /></a>
       <a href="https://www.google.com/search?q=javascript" target="_blank"><img src={javascript} /></a>
