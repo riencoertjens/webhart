@@ -36,7 +36,7 @@ const AboutPage = props => (
       </a>
     </div>
     <div className="cta_container">
-      <CTA to="contact" label="let's talk" />
+      <CTA to="contact" label="let's talk" className="solid" />
     </div>
   </main>
 );
