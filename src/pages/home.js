@@ -18,15 +18,6 @@ class HomePage extends React.Component {
     super(props)
   }
 
-  handleClick(){
-    var elements = document.getElementsByClassName("description-hidden");
-    console.log(elements);
-    for (var i = 0; i < elements.length; i++) {
-      elements[i].style.display="inline-block";
-      console.log(elements[i]);
-    }
-  }
-
   render(){
     return(
       <main>
