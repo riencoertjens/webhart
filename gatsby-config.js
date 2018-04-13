@@ -1,19 +1,32 @@
 const pixrem = require('pixrem');
 const autoprefixer = require('autoprefixer');
 
+const config = require('./meta/config')
+
 module.exports = {
   siteMetadata: {
-    title: `webhart`,
-    description: `tailor made websites`,
+    title: config.siteTitle,
+    siteUrl: config.siteUrl,
   },
   plugins: [
     `gatsby-plugin-react-next`,
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sitemap`,
+    `gatsby-transformer-json`,
     `svgo`,
+    {
+      resolve: `gatsby-plugin-nprogress`,
+      options: {
+        // Setting a color is optional.
+        color: `#FF8100`,
+        // Disable the loading spinner.
+        showSpinner: false,
+      },
+    },
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        trackingId: "UA-19600184-6",
+        trackingId: config.siteGATrackingID,
         // Puts tracking script in the head instead of the body
         head: false,
         // Setting this parameter is optional
@@ -51,6 +64,5 @@ module.exports = {
         path: `${__dirname}/src/data/`,
       },
     },
-    `gatsby-transformer-json`
   ],
 }
