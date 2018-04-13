@@ -1,5 +1,7 @@
 import React from 'react';
 
+import Page from '../components/Page';
+
 import {
   IoIosHomeOutline,
   IoIosEmailOutline,
@@ -7,7 +9,7 @@ import {
   IoIosTelephoneOutline
 } from "react-icons/lib/io";
 
-class ContactPage extends React.Component {
+class ContactPage extends Page {
   constructor(props) {
     super(props);
     this.state = {
@@ -58,7 +60,7 @@ class ContactPage extends React.Component {
 
   render(){
     return(
-      <main>
+      <main className={this.state.className}>
         <form
           name="contact-form" 
           data-netlify="true"

@@ -1,6 +1,10 @@
 import React from 'react';
+
+import Page from '../components/Page';
+
 import Card from '../components/Card';
 import CTA from '../components/CTA';
+
 
 import code from "../assets/icons/code.svg";
 import network from "../assets/icons/network.svg";
@@ -35,49 +39,57 @@ import {
   FaDiamond
 } from "react-icons/lib/fa"
 
-const SkillsPage = props => (
-  <main>
-    <Card 
-      icon={code}
-      title="coding artisan"
-      tagline="An artisan is a craftsman who makes things by hand."
-      className="artisan"
-    />
-    <Card 
-      icon={network}
-      title="network"
-      tagline="community over competition"
-      descriptionBottom="I can't do everything related to building websites. I focus on development and surround myself with people who are experts in their discipline to help create an online (and offline) identity for you. Are you looking for a developer? Get in touch!"
-      className="network"
-    />
-    <Card 
-      icon={communication}
-      title="communication"
-      tagline="let's use emoticons"
-      descriptionBottom="Regular interactions and showing progress makes sure problems can be solved and changes can be made before it is too late. Communication with everyone involved (client, developer, designer, ...) should be a direct. No degrees of separation."
-      className="communication"
-    />
-    <div className="tools">
-      <h3>technologies and tools I like and use</h3>
-      <a href="https://www.google.com/search?q=html" target="_blank"><img src={html} /></a>
-      <a href="https://www.google.com/search?q=css" target="_blank"><img src={css} /></a>
-      <a href="https://www.google.com/search?q=javascript" target="_blank"><img src={javascript} /></a>
-      <a href="https://reactjs.org/" target="_blank"><img src={react} /></a>
-      <a href="https://www.gatsbyjs.org/" target="_blank"><img src={gatsby} /></a>
-      <a href="https://sass-lang.com/" target="_blank"><img src={sass} /></a>
-      <a href="https://webpack.js.org/" target="_blank"><img src={webpack} /></a>
-      <a href="https://babeljs.io/" target="_blank"><img src={babel} /></a>
-      <a href="https://www.sketchapp.com/" target="_blank"><img src={sketch} /></a>
-      <a href="https://git-scm.com/" target="_blank"><img src={git} /></a>
-      <a href="https://github.com/" target="_blank"><img src={github} /></a>
-      <a href="https://www.npmjs.com/" target="_blank"><img src={npm} /></a>
-    </div>
-    <div className="cta_container">
-      <CTA to="contact" label="get in touch" className="solid" />
-      <CTA to="about" label="more about me" />
-    </div>
+class SkillsPage extends Page {
+  constructor(props) {
+    super(props)
+  }
 
-  </main>
-);
+  render(){
+    return(
+      <main className={this.state.className}>
+        <Card 
+          icon={code}
+          title="coding artisan"
+          tagline="An artisan is a craftsman who makes things by hand."
+          className="artisan"
+        />
+        <Card 
+          icon={network}
+          title="network"
+          tagline="community over competition"
+          descriptionBottom="I can't do everything related to building websites. I focus on development and surround myself with people who are experts in their discipline to help create an online (and offline) identity for you. Are you looking for a developer? Get in touch!"
+          className="network"
+        />
+        <Card 
+          icon={communication}
+          title="communication"
+          tagline="let's use emoticons"
+          descriptionBottom="Regular interactions and showing progress makes sure problems can be solved and changes can be made before it is too late. Communication with everyone involved (client, developer, designer, ...) should be a direct. No degrees of separation."
+          className="communication"
+        />
+        <div className="tools">
+          <h3>technologies and tools I like and use</h3>
+          <a href="https://www.google.com/search?q=html" target="_blank"><img src={html} /></a>
+          <a href="https://www.google.com/search?q=css" target="_blank"><img src={css} /></a>
+          <a href="https://www.google.com/search?q=javascript" target="_blank"><img src={javascript} /></a>
+          <a href="https://reactjs.org/" target="_blank"><img src={react} /></a>
+          <a href="https://www.gatsbyjs.org/" target="_blank"><img src={gatsby} /></a>
+          <a href="https://sass-lang.com/" target="_blank"><img src={sass} /></a>
+          <a href="https://webpack.js.org/" target="_blank"><img src={webpack} /></a>
+          <a href="https://babeljs.io/" target="_blank"><img src={babel} /></a>
+          <a href="https://www.sketchapp.com/" target="_blank"><img src={sketch} /></a>
+          <a href="https://git-scm.com/" target="_blank"><img src={git} /></a>
+          <a href="https://github.com/" target="_blank"><img src={github} /></a>
+          <a href="https://www.npmjs.com/" target="_blank"><img src={npm} /></a>
+        </div>
+        <div className="cta_container">
+          <CTA to="contact" label="get in touch" className="solid" />
+          <CTA to="about" label="more about me" />
+        </div>
+
+      </main>
+    )
+  }
+}
 
 export default SkillsPage;

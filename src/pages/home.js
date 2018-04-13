@@ -1,5 +1,8 @@
 import React from 'react';
 import Link from 'gatsby-link';
+
+import Page from '../components/Page';
+
 import Card from '../components/Card';
 import CTA from '../components/CTA';
 
@@ -13,14 +16,14 @@ import analytics from "../assets/icons/analytics.svg";
 
 
 
-class HomePage extends React.Component {
+class HomePage extends Page {
   constructor(props) {
     super(props)
   }
 
   render(){
     return(
-      <main>
+      <main className={this.state.className}>
         <Card
           icon={cut}
           title="first impressions last the longest"
