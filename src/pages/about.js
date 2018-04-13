@@ -21,14 +21,14 @@ class AboutPage extends Page {
   render(){
     return(
       <main className={this.state.className}>
-        <img src={ProfileImage} width="100%"/>
+        <h2>Hi, my name is Rien</h2>
+        <p className="tagline">(pronounced ‘reen’ in english)</p>
         <p className="about-me">
-          Hi, my name is Rien <i>(pronounced ‘reen’ in english)</i><br/>
-          Born in 1990 in Antwerp, Belgium. Currently living in Girona, Spain.<br/>
-          Apart from building websites I also work as a bike mechanic.<br/>
-          When I'm not working, I'm probably riding my bike or learning something new
+          Born in 1990 in Antwerp, Belgium. Currently living in Girona, Spain. Apart from building websites I also work as a bike mechanic. When I'm not working, I'm probably riding my bike or learning something new
         </p>
-        <hr/>
+        <img src={ProfileImage} width="100%"/>
+        <h2>WEBhart</h2>
+        <p className="tagline">what's in the name?</p>
         <p className="about-totem">When I went to the scouts, everyone was given a totem - an animal based on their personality. Mine is “Trustworthy Hart” which as you can guess I’m quite proud of. The description goes as follows:<br />
         <span>“All the movements of the Hart are graceful, proud and dignified. The Hart is careful but when it feels safe, it gives its confidence. It has excellent developed senses. In the mating season, the Hart often becomes irritated and angry for the slightest trifle. The Hart is sensitive and social, but mutually combative. The Hart is quick, vigilant and inseparable from their fawns.”</span>
         </p>
