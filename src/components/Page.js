@@ -8,11 +8,17 @@ class PageClass extends React.Component {
     };
   }
   componentDidMount() {
-    console.log('haaai');
-    this.setState({className:"mounted"})
+    setTimeout(
+      function() {
+        this.setState({className:"mounted"});
+      }.bind(this),
+      400
+    );
   }
   componentWillUnmount() {
-    console.log('baaai');
+    this.setState({className:"unmounting"})
+  }
+  componentWillMount() {
     this.setState({className:"unmounting"})
   }
 }

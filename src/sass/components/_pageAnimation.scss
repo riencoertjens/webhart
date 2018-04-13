@@ -12,12 +12,13 @@
 main{
   overflow: hidden;
   &.mounted{
-    animation-duration: 1s;
+    animation-duration: 0.5s;
     animation-iteration-count: 1;
     animation-name: expand;
   }
   &.unmounting{
-    animation-duration: 0.5s;
+    max-height: 0;
+    animation-duration: 0.3s;
     animation-iteration-count: 1;
     animation-name: collapse;
   }
