@@ -22,7 +22,7 @@ class AboutPage extends Page {
     return(
       <main className={this.state.className}>
         <h2>Hi, my name is Rien</h2>
-        <p className="tagline">(pronounced ‘reen’ in english)</p>
+        <p className="tagline">pronounced ‘reen’ in english</p>
         <p className="about-me">
           Born in 1990 in Antwerp, Belgium. Currently living in Girona, Spain. Apart from building websites I also work as a bike mechanic. When I'm not working, I'm probably riding my bike or learning something new
         </p>
