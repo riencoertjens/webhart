@@ -38,9 +38,9 @@ class TemplateWrapper extends React.Component {
     return(
       <div className={classNames}>
         <a className="bg-changer" href="javascript:;" onClick={() => this.handleClick()} >don't click me</a>
-        <Helmet
-         title={siteTitle}
-        />
+        <Helmet title={siteTitle}>
+          <meta name="google-site-verification" content="E8qNV1CVMO3vntqtgvfkDtYmqzkZ_Ve0pzFC3dYIYh4" />
+        </Helmet>
         <div className="flexTop">
           <Logo />
         </div>
