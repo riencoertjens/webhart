@@ -17,27 +17,27 @@ class TemplateWrapper extends React.Component {
     super(props)
   }
 
-  handleClick(element, bgImages){
-    const bgImage = parseInt(element.target.getAttribute('data-bg'));
-
-    let NewBgImage = bgImage == (bgImages.length - 1) ? 0 : bgImage+1
-
-    element.target.setAttribute('data-bg', NewBgImage);
-
-    document.body.style.backgroundImage = "url('"+bgImages[NewBgImage]+"')";
+  handleClick(){
+    // document.body.className = 'bg-1';
+    const bgClassName = document.body.className
+    if (bgClassName == '') {
+      document.body.className = 'bg-1';
+    } else {
+      const bgNumber = parseInt(bgClassName.substring('bg-'.length));
+      const newBgNumber = bgNumber < 38 ? bgNumber+1 : 0;
+      document.body.className = 'bg-'+newBgNumber;
+    }
   }
 
   render(){
     const siteTitle = this.props.data.site.siteMetadata.title
     let location = this.props.location.pathname == '/' ? 'home' : this.props.location.pathname.substr(1)
-    let bgImages = this.props.data.allDataJson.edges[0].node.bgImages;
-    let bgNumber = Math.floor(Math.random()*(bgImages.length - 1)) + 1;
 
     const classNames = location + " app_wrapper"
 
     return(
       <div className={classNames}>
-        <a data-bg={bgNumber} className="bg-changer" href="javascript:;" onClick={(e) => this.handleClick(e, bgImages)} >don't click me</a>
+        <a className="bg-changer" href="javascript:;" onClick={() => this.handleClick()} >don't click me</a>
         <Helmet
          title={siteTitle}
         />
