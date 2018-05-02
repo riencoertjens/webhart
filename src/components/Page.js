@@ -4,22 +4,8 @@ class PageClass extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      className:"unmounting"
+      className:"animationclass"
     };
-  }
-  componentDidMount() {
-    setTimeout(
-      function() {
-        this.setState({className:"mounted"});
-      }.bind(this),
-      400
-    );
-  }
-  componentWillUnmount() {
-    this.setState({className:"unmounting"})
-  }
-  componentWillMount() {
-    this.setState({className:"unmounting"})
   }
 }
 
