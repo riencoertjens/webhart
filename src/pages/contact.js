@@ -9,7 +9,7 @@ import {
   IoIosTelephoneOutline
 } from "react-icons/lib/io";
 
-class ContactPage extends Page {
+class ContactPage extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -60,7 +60,7 @@ class ContactPage extends Page {
 
   render(){
     return(
-      <main className={this.state.className}>
+      <main>
         <form
           name="contact-form" 
           data-netlify="true"

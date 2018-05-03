@@ -16,14 +16,14 @@ import analytics from "../assets/icons/analytics.svg";
 
 
 
-class HomePage extends Page {
+class HomePage extends React.Component {
   constructor(props) {
     super(props)
   }
 
   render(){
     return(
-      <main className={this.state.className}>
+      <main>
         <Card
           icon={cut}
           title="first impressions last the longest"

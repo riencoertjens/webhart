@@ -13,14 +13,14 @@ import {
   IoSocialLinkedin
 } from "react-icons/lib/io";
 
-class AboutPage extends Page {
+class AboutPage extends React.Component {
   constructor(props) {
     super(props)
   }
 
   render(){
     return(
-      <main className={this.state.className}>
+      <main>
         <h2>Hi, my name is Rien</h2>
         <p className="tagline">pronounced ‘reen’ in english</p>
         <p className="about-me">
