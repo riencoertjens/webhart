@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 import Link from 'gatsby-link';
 
 import Page from '../components/Page';
@@ -21,6 +22,8 @@ class AboutPage extends React.Component {
   render(){
     return(
       <main>
+        <Helmet title={"who am I - "+this.props.data.site.siteMetadata.title}>
+        </Helmet>
         <h2>Hi, my name is Rien</h2>
         <p className="tagline">pronounced ‘reen’ in english</p>
         <p className="about-me">
@@ -52,3 +55,15 @@ class AboutPage extends React.Component {
 }
 
 export default AboutPage;
+
+
+export const AboutPageqry = graphql`
+  query AboutPageqry {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
+

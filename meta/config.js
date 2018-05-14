@@ -2,11 +2,14 @@
  * Created by vaibhav on 31/3/18
  */
 module.exports = {
-  siteTitle: 'WEB˘hart', // Site title.
-  siteTitleAlt: 'WEB˘hart - tailor made websites', // Alternative site title for SEO.
+  siteTitle: 'WEB˘hart: tailor made websites', // Site title.
+
   siteLogo: '/logos/logo-512x512.png', // Logo used for SEO.
+
   siteUrl: 'https://www.web-hart.com', // Domain of your website without pathPrefix.
+
   siteDescription: 'Tailor made websites made to impress that are fast, responsive and search engine friendly', // Website description used for RSS feeds/meta description tag.
+
   userName: 'Rien Coertjens',
   userLocation: 'Girona, Spain',
   userDescription: '',

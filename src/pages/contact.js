@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import Page from '../components/Page';
 
@@ -61,6 +62,8 @@ class ContactPage extends React.Component {
   render(){
     return(
       <main>
+        <Helmet title={"get in touch - "+this.props.data.site.siteMetadata.title}>
+        </Helmet>
         <form
           name="contact-form" 
           data-netlify="true"
@@ -97,6 +100,12 @@ class ContactPage extends React.Component {
 
 export default ContactPage;
 
-
-
-// emailValid = value.match(/^([\w.%+-]+)@([\w-]+\.)+([\w]{2,})$/i);
+export const ContactPageqry = graphql`
+  query ContactPageqry {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

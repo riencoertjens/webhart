@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import Helmet from 'react-helmet';
 
 import Page from '../components/Page';
 
@@ -24,6 +25,8 @@ class HomePage extends React.Component {
   render(){
     return(
       <main>
+        <Helmet title={"what I do - "+this.props.data.site.siteMetadata.title}>
+        </Helmet>
         <Card
           icon={cut}
           title="first impressions last the longest"
@@ -76,3 +79,13 @@ class HomePage extends React.Component {
 }
 
 export default HomePage;
+
+export const homePageQuery = graphql`
+  query homePageQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`

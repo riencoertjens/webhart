@@ -1,4 +1,5 @@
 import React from 'react';
+import Helmet from 'react-helmet';
 
 import Page from '../components/Page';
 
@@ -47,6 +48,8 @@ class SkillsPage extends Page {
   render(){
     return(
       <main className={this.state.className}>
+        <Helmet title={"how I work - "+this.props.data.site.siteMetadata.title}>
+        </Helmet>
         <Card 
           icon={code}
           title="coding artisan"
@@ -93,3 +96,14 @@ class SkillsPage extends Page {
 }
 
 export default SkillsPage;
+
+export const skillsPageQuery = graphql`
+  query skillsPageQuery {
+    site {
+      siteMetadata {
+        title
+      }
+    }
+  }
+`
+
